@@ -1,6 +1,9 @@
-package hello.proxy.app.v2;
+package hello.proxy.app.v3;
 
-public class OrderRepositoryV2 {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class OrderRepositoryV3 {
 
     public void save(String itemId) {
         // 저장 로직

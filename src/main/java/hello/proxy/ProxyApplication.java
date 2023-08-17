@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
 //@Import(AppV1Config.class) // AppV1Config 가 @Bean 으로 등록이 되어야 AppV1Config 내의 @Bean들도 등록이 되므로.
-@Import(AppV2Config.class) // AppV1Config 가 @Bean 으로 등록이 되어야 AppV1Config 내의 @Bean들도 등록이 되므로.
+@Import({AppV1Config.class, AppV2Config.class})
 @SpringBootApplication(scanBasePackages = "hello.proxy.app") //주의
 public class ProxyApplication {
 
