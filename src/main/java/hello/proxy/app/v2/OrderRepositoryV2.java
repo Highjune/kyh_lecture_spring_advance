@@ -1,6 +1,6 @@
 package hello.proxy.app.v2;
 
-public class OrderRepositoryV3 {
+public class OrderRepositoryV2 {
 
     public void save(String itemId) {
         // 저장 로직
